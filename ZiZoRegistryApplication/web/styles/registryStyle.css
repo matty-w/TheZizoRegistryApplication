@@ -1,0 +1,921 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto);
+
+
+#default_form
+{
+  position: fixed;
+  width: 25em;
+  margin: 0;
+  padding: 0;
+}
+
+#default_fieldset
+{
+  border: 1px solid #235B6D;
+  width: 25em;
+}
+
+#default_legend
+{
+  color: #fff;
+  background: #235B6D;
+  border: 1px solid #000000;
+  padding: 2px 6px
+}
+
+.form-style-1 
+{
+  margin:0px auto;
+  max-width: 400px;
+  padding: 0px 80px 0px 30px;
+  font: 13px "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+}
+
+.form-style-1 .required
+{
+  color:red;
+}
+
+.form-style-1 .field-long
+{
+  width: 90%;
+}
+
+#browseButton
+{
+  position: absolute;
+  right: 5px;
+  width: 100px;
+}
+
+
+
+
+
+
+h2#loginTitle
+{
+  color: #ffffff; 
+  font-family: 'Lato', sans-serif; 
+  font-size: 30px; 
+  font-weight: 300; 
+  text-shadow: 1px 1px #000000;
+  text-align: center;
+  position: relative;
+  top: 6em;
+  bottom: auto;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h3#loginSubTitle
+{
+  color: #ffffff; 
+  font-family: 'Lato', sans-serif; 
+  font-size: 20px; 
+  font-weight: 300; 
+  text-shadow: 1px 1px #000000;
+  text-align: center; 
+  position: relative;
+  top: 10em;
+  bottom: auto;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login 
+{
+  background: #eceeee;
+  border: 1px solid #42464b;
+  border-radius: 6px;
+  height: 300px;
+  width: 298px;
+  position: relative;
+  top: 14em;
+  bottom: auto;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.login h1 
+{
+  background-image: linear-gradient(top, #f1f3f3, #d4dae0);
+  border-bottom: 1px solid #a6abaf;
+  border-radius: 6px 6px 0 0;
+  box-sizing: border-box;
+  color: #727678;
+  display: block;
+  height: 43px;
+  font: 600 14px/1 'Open Sans', sans-serif;
+  padding-top: 14px;
+  margin: 0;
+  text-align: center;
+  text-shadow: 0 -1px 0 rgba(0,0,0,0.2), 0 1px 0 #fff;
+}
+
+input#passwordTextbox, input#usernameTextbox 
+{
+  border: 1px solid #a1a3a3;
+  border-radius: 4px;
+  box-shadow: 0 1px #fff;
+  box-sizing: border-box;
+  color: #696969;
+  height: 39px;
+  margin: 31px 0 0 29px;
+  padding-left: 37px;
+  transition: box-shadow 0.3s;
+  width: 240px;
+}
+
+input#passwordTextbox:focus, input#usernameTextbox:focus 
+{
+  box-shadow: 0 0 4px 1px rgba(55, 166, 155, 0.3);
+  outline: 0;
+}
+
+.forgot:hover 
+{ 
+  color: #3b3b3b
+}
+
+#submitButton
+{
+  width:240px;
+  height:35px;
+  display:block;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  padding-top:6px;
+  margin: 29px 0 0 29px;
+  position:relative;
+  cursor:pointer;
+  border: none;  
+  background-color: #235B6D;
+  background-image: linear-gradient(top,#3db0a6,#3111);
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius:5px;
+}
+
+#resetButton
+{
+  width:240px;
+  height:35px;
+  display:block;
+  font-family:Arial, "Helvetica", sans-serif;
+  font-size:16px;
+  font-weight:bold;
+  color:#fff;
+  text-decoration:none;
+  text-transform:uppercase;
+  text-align:center;
+  padding-top:6px;
+  margin: 29px 0 0 29px;
+  position:relative;
+  cursor:pointer;
+  border: none;  
+  background-color: #AF2525;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border-bottom-left-radius:5px;
+}
+
+#submitButton:hover
+{
+  background-color: #1C4B5B;  
+}
+
+#resetButton:hover
+{
+  background-color: #901F1F;  
+}
+
+
+
+#loginDetailsDiv
+{
+  position: relative;
+  height: 6em;
+  width: 18em;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#buttonDiv
+{
+  width: 200px;
+  height: 2em;
+  position: relative;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#comboboxDiv
+{
+  position: relative;
+  top: 7em;
+  margin-left: 0em;
+  margin-right: auto;
+  width: 23em;
+  height: 2em;
+}
+
+#helpParagraphs
+{
+  color: white;
+  text-shadow: 1px 1px #000000;
+  position: relative;
+  left: 10px;
+  margin-right: 5%;
+}
+
+body#mainBackground
+{
+  background-color: #9f94ba;
+}
+
+h2#mainTitle
+{
+  color: #ffffff; 
+  font-family: 'Lato', sans-serif; 
+  font-size: 30px; 
+  font-weight: 300; 
+  text-shadow: 1px 1px #000000;
+  text-align: center;
+}
+
+h3#mainSubtitle
+{
+  color: #ffffff; 
+  font-family: 'Lato', sans-serif; 
+  font-size: 20px; 
+  font-weight: 300; 
+  text-shadow: 1px 1px #000000;
+  text-align: center;
+}
+
+#topPage
+{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  min-height: 7em;
+  max-height: 7em;
+  z-index: -1;
+}
+
+#zizoLogo
+{
+  position: absolute;
+  left: 150px;
+  top: 0px;
+}
+
+#bottomPage
+{
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  width: 100%;
+  min-height: 7em;
+  max-height: 7em;
+}
+
+#loginDiv
+{
+  width: 35em;
+  height: 20em;
+  position: relative;
+  top: 15em;
+  bottom: auto;
+  margin: auto;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#loginForm
+{
+
+}
+
+#version
+{
+  color: #ffffff; 
+  font-family: 'Lato', sans-serif; 
+  font-size: 10px; 
+  font-weight: 300; 
+  text-shadow: 1px 1px #000000;
+  text-align: center;
+}
+
+#versionDiv
+{
+  position: fixed;
+  top: 50em;
+  left: 2em;
+}
+
+#projectTextbox
+{
+  position: fixed;
+  height: 25px;
+  width: 12.5em;
+  margin-left: 16em;
+}
+#projectLabel
+{
+  color: white;
+  text-shadow: 1px 1px #000000;
+  position:fixed;	
+  margin-left: 6.05em;
+}
+
+#usernameTextbox
+{
+
+}
+#usernameLabel
+{
+  color: white;
+  text-shadow: 1px 1px #000000;
+  position: absolute;	
+  margin-left: 4%;
+}
+
+#passwordTextbox
+{
+
+}
+
+#passwordLabel
+{
+  color: white;
+  text-shadow: 1px 1px #000000;
+  position: absolute;
+  margin-left: 7.75%;
+}
+
+.loginButtons
+{
+  -webkit-border-radius: 25;
+  -moz-border-radius: 25;
+  border-radius: 5px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 15px;
+  background: #5C5CD7;
+  padding: 4px 15px 4px 15px;
+  text-decoration: none;
+}
+
+.loginButtons:hover
+{
+  background: #7C75D3;
+  text-decoration: none;
+}
+
+#menu 
+{
+  position: relative;
+  width: 100%;
+  min-width: 100%;
+  min-height: 13%;
+  max-height: 45px;
+  font-size: 16px;
+  font-family: Tahoma, Geneva, sans-serif;
+  color: #f0ffff;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 3px 2px 3px #333333;
+  background-color: #5C5CD7;
+  border-radius: 8px;
+  top: 6.67em;  
+}
+
+
+
+#menu ul 
+{
+  height: auto;
+  padding: 8px 0px;
+  margin: 0px;
+}
+
+#menu li 
+{ 
+  width: 25%;
+  display: inline-block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#menu a 
+{
+  text-decoration: none;
+  color: #fffff;
+  padding:8px 8px 8px 8px;
+}
+
+#menu a:hover 
+{
+  color: #F90;
+  background-color: #FFF;
+}
+
+#registryTableDiv
+{
+  position: absolute;
+  overflow: auto;
+  height: 60%;
+  top: 3em;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+table#registryTable
+{
+  width: 100%; 
+  display: inline-table;
+  background-color: #f1f1c1;
+  border: 1px solid black;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#registryTable th 
+{
+  text-align: left;
+  border: 1px solid black;
+  background-color: #5C5CD7;
+  color: #F0F2F0;
+}
+
+#registryTable td
+{
+  border: 1px solid black;
+  background-color: #B0B0EB;
+}
+
+#projectDropDown
+{
+  position: relative;
+  margin-left: 10em;
+  height: 18px;
+  min-width: 20%;
+  top: 2px;
+}
+
+#comboBoxLabel
+{
+  color: white;
+  text-shadow: 1px 1px #000000;
+  position: absolute;
+}
+
+#pageLayout
+{
+  position: relative;
+  top: 7.5em; 
+  width: 55%;
+  height: 22em;
+  max-height: 28em;
+  min-height: 10em;
+  bottom: auto;
+  margin-left: auto;
+  margin-right: auto;
+  min-width: 47em;
+}
+
+#editButton
+{
+  height: 2em;
+  width: 10%;
+  vertical-align: bottom;
+  display: inline-block;
+  float: right;
+}
+
+#deleteButton
+{
+  width: 10%;
+  height: 2em;
+  vertical-align: bottom;
+  display: inline-block;
+  float: right;
+}
+
+#addButton
+{
+  width: 10%;
+  height: 2em;
+  vertical-align: bottom;
+  display: inline-block;
+  float: right;
+}
+
+#searchButton
+{
+  position: absolute;
+  margin-left: 1em;
+  width: 35%;
+  max-width: 35%;
+  min-width: 35%;
+}
+
+#loggedInUserLabel
+{
+  color: white;
+  text-shadow: 1px 1px #000000;
+  position: fixed;
+  margin-left: 0em;
+  top: 77%;
+}
+
+a
+{
+  color: #f0ffff;
+}
+
+/*#################################### Popup  ############################################################*/
+
+#blanket 
+{
+  background-color:#dddddd;
+  opacity: 0.65;
+  *background:none;
+  position:absolute;
+  z-index: 9001;
+  top:0px;
+  left:0px;
+  width:100%;
+}
+
+#popUpDiv 
+{
+  position:absolute;
+  background-color:#FFFFF0;
+  width:460px;
+  height:245px;
+  border:2px solid #000;
+  z-index: 9002;
+}
+
+#tick
+{
+  display: block;
+  margin-left: auto;
+  margin-right: auto; 
+}
+
+#popupTitle
+{
+  color: #575757;
+  font-size: 30px;
+  text-align: center;
+  font-weight: 600;
+  text-transform: none;
+  position: relative;
+  margin: 0;
+  padding: 0;
+  line-height: 60px;
+  display: block;
+}
+
+#popupParagraph
+{
+  font-size: 16px;
+  text-align: center;
+  font-weight: 300;
+  position: relative;
+  float: none;
+  margin: 0;
+  padding: 0;
+  line-height: normal;
+}
+
+.popupButtons
+{
+  color: #fff;
+  border: 0;
+  box-shadow: none;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 10px 32px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #27a155;
+}
+
+.popupButtons:hover
+{
+  background: #7AB97A;
+  text-decoration: none;
+}
+
+.dismissButton
+{
+  color: #fff;
+  border: 0;
+  box-shadow: none;
+  font-size: 17px;
+  font-weight: 500;
+  border-radius: 5px;
+  padding: 10px 32px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: #C03030;
+}
+
+.dismissButton:hover
+{
+  background: #CE5E5E;
+  text-decoration: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+body#fileExplorerBody
+{
+  background: white;
+}
+
+#fileExplorerH2
+{
+  color: #333333;
+}
+
+#fileExplorerH3
+{
+  color: #333333;
+}
+
+#fileExplorerH4
+{
+  position: relative;
+  top:10px;
+  color: #333333;
+}
+
+#title
+{
+  position: relative;
+  top: 0px;
+  left: 280px;
+  color: #333333;
+  font-size: 25px;
+}
+
+#subTitle
+{
+  position: relative;
+  top: 0px;
+  left: 280px;
+  color: #333333;
+  font-size: 20px;
+}
+
+#projectsTitleDiv
+{
+  position: relative;
+  top: 0px;
+  width: 150px;
+  height: 25px;
+  left: 0px;
+}
+
+#topBar
+{
+  position: relative;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  background: #D6DBE0;
+  
+}
+
+#subTopBar
+{
+  position: relative;
+  top: 0px;
+  left: 252px;
+  width: 848px;
+  height: 60px;
+  max-height: 120px;
+  border-bottom: 2px solid #D6DBE0;
+}
+
+#sideBar
+{
+  position: relative;
+  top: -205px;
+  height: 517px;
+  width: 250px;
+  border-right: 2px solid #D6DBE0;
+}
+
+#bottomBar
+{
+  position: relative;
+  bottom: 471px;
+  left: 0px;
+  width: 100%;
+  height: 40px;
+  background: #D6DBE0;
+}
+
+#projectTableHolder
+{
+  position: relative;
+  left: 0px;
+  width: 250px;
+  height: 470px;
+  max-height: 470px;
+  overflow: auto;
+}
+
+table#projectNames
+{
+  width: 100%;
+  height: 40px;
+  max-height: 100%;
+  max-width: 100%;
+  display: inline-table;
+  border-collapse: collapse;
+  border-spacing: 0;
+  overflow: auto;
+}
+
+table#projectFolders
+{
+  width: 100%;
+  height: 320px;
+  max-height: 100%;
+  max-width: 100%;
+  display: inline-table;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+#folderPic
+{
+  max-width: 8px;
+}
+
+#folderAndTitle
+{
+  text-align: center;
+  width: 100%;
+}
+
+#folderText
+{
+}
+
+#folder
+{
+  display: inline-table;
+  margin: 0 40px;
+}
+
+#folder:HOVER
+{
+  
+}
+
+#folderTitle
+{
+  text-align: center;
+}
+
+td#fileTd
+{
+}
+
+#projectNames tr:HOVER
+{
+  background-color: #CDE7F0;
+}
+
+#projectFolders td:HOVER
+{
+  background-color: #CDE7F0;  
+}
+
+#folderPath
+{
+  position: relative;
+  bottom: 30%;
+  left: 0px;
+  height: 30px;
+  width: 800px;
+  font-size: 16px;
+}
+
+#projectFolderHolder
+{
+  position: relative;
+  left: 280px;
+  bottom: 531px;
+  width: 815px;
+  height: 270px;
+  overflow: auto;
+}
+
+#buttonHolder
+{
+  position: relative;
+  left: 520px;
+  bottom: 520px;
+  width: 250px;
+  height: 35px;
+  float: left;
+}
+
+#okExplorer
+{
+  width: 120px;
+  height: 30px;
+  display: inline-block;
+  margin-right: 3px;
+}
+
+#cancelExplorer
+{
+  width: 120px;
+  height: 30px;  
+  display: inline-block;
+  margin-right: 3px;  
+}
+
+#addReg
+{
+  position: absolute;
+  top: 15em;
+}
+
+#fileBrowserDiv
+{
+position:absolute;
+background-color:#FFFFF0;
+width:1100px;
+height:600px;
+border:2px solid #000;
+z-index: 9002;
+}
+
+
+
+#FileTypeDropDownHolder
+{
+  position: relative;
+  left: 280px;
+  bottom: 520px;
+  width: 300px;
+  height: 35px;
+  float: left;
+}
+
+#fileTypeDropDown
+{
+  width: 100%;
+  height: 30px;
+}
+
+
+
+
