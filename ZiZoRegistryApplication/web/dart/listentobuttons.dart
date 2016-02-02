@@ -11,7 +11,8 @@ class ListenToButtons
   AddRegistry ar = new AddRegistry();
   DeleteRegistry dr = new DeleteRegistry();
   EditRegistry er = new EditRegistry();
-  LoadFunctions lf = new LoadFunctions();
+  OnLoadRegistry olr = new OnLoadRegistry();
+  //LoadFunctions lf = new LoadFunctions();
   PopupConstructor pc = new PopupConstructor();
   PopupSelection ps = new PopupSelection();
   
@@ -23,7 +24,7 @@ class ListenToButtons
   
   void listenToRegistryButtons()
   {
-    window.onLoad.listen(lf.loadPreviousTable);
+    window.onLoad.listen(olr.loadPreviousTable);
     querySelector("#homePageButton").onClick.listen(navigate.reloadPage);
     //querySelector("#helpPageButton").onClick.listen(sfoh.showHelpPage);
     querySelector("#logoutButton").onClick.listen(navigate.logoutRegistry);
@@ -36,9 +37,9 @@ class ListenToButtons
     querySelector("#yes").onClick.listen(af.completeTask);
     querySelector("#ok").onClick.listen(pc.dismissBasicPromptReload);
     querySelector("#dismissFinal").onClick.listen(pc.dismissBasicPromptReload);
-    querySelector("#popupAction").onClick.listen(lf.showConfirmPrompt);
+    querySelector("#popupAction").onClick.listen(olr.showConfirmPrompt);
     querySelector("#browseButton").onClick.listen(showFileExplorer);
-    querySelector("#fileTypeDropDown").onChange.listen(lf.loadChosenFiles);
+    querySelector("#fileTypeDropDown").onChange.listen(olr.loadChosenFiles);
     querySelector("#okExplorer").onClick.listen(af.setItem); 
     querySelector("#cancelExplorer").onClick.listen(hideExplorer);
   }

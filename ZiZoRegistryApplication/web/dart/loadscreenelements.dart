@@ -15,8 +15,8 @@ class LoadScreenElements
   
   void registryMain()
   {    
-    LoadFunctions lf = new LoadFunctions();
-    window.onLoad.listen(lf.loadProjects);
+    OnLoadRegistry olr = new OnLoadRegistry();
+    window.onLoad.listen((Event e) => olr.loadProjectsDropdownAndExplorer("#projectDropDown", "#projectNames"));
     ltb.listenToRegistryButtons();
   }
 }
