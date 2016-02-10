@@ -6,41 +6,42 @@ import 'package:ServerFunctions/ServerFunctions.dart';
 
 class ListenToButtons
 {
-  NavigationFunctions navigate = new NavigationFunctions();
-  ActionFunctions af = new ActionFunctions();
+  RegistryNavigation rn = new RegistryNavigation();
+  GlobalNavigationFunctions gnf = new GlobalNavigationFunctions();
+  RegistryActionFunctions raf = new RegistryActionFunctions();
   AddRegistry ar = new AddRegistry();
   DeleteRegistry dr = new DeleteRegistry();
   EditRegistry er = new EditRegistry();
   OnLoadRegistry olr = new OnLoadRegistry();
-  //LoadFunctions lf = new LoadFunctions();
   PopupConstructor pc = new PopupConstructor();
   PopupSelection ps = new PopupSelection();
   
   void listenToLoginButtons()
   {
-    querySelector("#submitButton").onClick.listen(navigate.loginRegistry);
+    querySelector("#submitButton").onClick.listen((MouseEvent m) => 
+        gnf.basicAuthenticationLogin("#usernameTextbox", "#passwordTextbox", "Registry-Application"));
     querySelector("#dismissFinal").onClick.listen(pc.dismissBasicPrompt);
   }
   
   void listenToRegistryButtons()
   {
     window.onLoad.listen(olr.loadPreviousTable);
-    querySelector("#homePageButton").onClick.listen(navigate.reloadPage);
+    querySelector("#homePageButton").onClick.listen(gnf.reloadPage);
     //querySelector("#helpPageButton").onClick.listen(sfoh.showHelpPage);
-    querySelector("#logoutButton").onClick.listen(navigate.logoutRegistry);
+    querySelector("#logoutButton").onClick.listen((MouseEvent m) => rn.logoutRegistry("#registryTable", "#projectDropDown"));
     querySelector("#usernameOutput").innerHtml = window.sessionStorage['username'];
-    querySelector("#projectDropDown").onChange.listen(af.listenToBox);
+    querySelector("#projectDropDown").onChange.listen(raf.listenToBox);
     querySelector("#deleteButton").onClick.listen(dr.deleteButton);
     querySelector("#editButton").onClick.listen(er.editButton);
     querySelector("#addButton").onClick.listen(ar.addButton);
     querySelector("#no").onClick.listen(pc.dismissBasicPromptReload);
-    querySelector("#yes").onClick.listen(af.completeTask);
+    querySelector("#yes").onClick.listen(raf.completeTask);
     querySelector("#ok").onClick.listen(pc.dismissBasicPromptReload);
     querySelector("#dismissFinal").onClick.listen(pc.dismissBasicPromptReload);
     querySelector("#popupAction").onClick.listen(olr.showConfirmPrompt);
     querySelector("#browseButton").onClick.listen(showFileExplorer);
     querySelector("#fileTypeDropDown").onChange.listen(olr.loadChosenFiles);
-    querySelector("#okExplorer").onClick.listen(af.setItem); 
+    querySelector("#okExplorer").onClick.listen(raf.setItem); 
     querySelector("#cancelExplorer").onClick.listen(hideExplorer);
   }
   
